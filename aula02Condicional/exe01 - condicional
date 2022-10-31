@@ -1,0 +1,21 @@
+
+programa {
+  funcao inicio() {
+    inteiro numero, resultado
+    escreva("Digite um número: \n")
+    leia(numero)
+    resultado = numero % 2
+  
+    se(numero == 0)
+    escreva("O número digitado foi ",numero, "! Favor digite um número válido!")
+    senao 
+    se(resultado == 0 e numero > 0)
+    escreva("O número digitado foi ",numero, "! O número é PAR e POSITIVO.")
+    senao se (resultado == 0 e numero < 0 )
+    escreva("O número digitado foi ",numero, "! O número é PAR e NEGATIVO.")
+    senao
+    se(resultado == 1 e numero > 0)
+    escreva("O número digitado foi ",numero, "! O número é ÕMPAR e POSITIVO.")
+    senao
+    escreva("O número digitado foi ",numero, "! O número é ÕMPAR e NEGATIVO.")
+}

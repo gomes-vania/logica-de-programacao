@@ -1,0 +1,29 @@
+programa{
+  
+  funcao inicio(){
+    inteiro i, j, copia, troca = 0, tam = 10
+	inteiro vet[10] = {10,2,4,61,0,5,8,3,4,1}
+
+    para(i = 0; i < tam; i++){
+      escreva(vet[i], ",")
+	}
+
+	  faca{
+      troca = 0
+      para(i = 0; i < tam - 1; i++){
+        se(vet[i] > vet[i+1]){
+          copia = vet[i]
+          vet[i] = vet[i+1]
+          vet[i+1] = copia
+          troca = 1
+        }
+      }
+    }enquanto(troca == 1)
+
+    escreva("\n")
+    para(i = 0; i < tam; i++)
+      escreva(vet[i], ",")
+}
+}
+	}
+}

@@ -1,0 +1,66 @@
+programa {
+  funcao inicio() {
+    // escreva seis numeros 
+
+    inteiro opcao, quantidade, valorProduto
+
+    escreva("Digite o numero do seu pedido: \n Hot Dog - 1 \n X-Salada - 2 \n X-Bancon - 3 \n Bauru - 4 \n Refrigerante - 5 \n Suco de Laranja - 6 \n ")
+    leia(opcao)
+  
+    escolha(opcao){
+
+      caso 1:
+      escreva("lanche hot Dog valor 10,00 \n")
+      escreva("Digite a quantidade \n")
+      leia(quantidade)
+      valorProduto = quantidade * 10
+      escreva("O valor é de ", valorProduto)
+      pare
+
+      caso 2:
+      escreva("x salada valor 15,00 \n")
+      escreva("Digite a quantidade \n")
+      leia(quantidade)
+      valorProduto = quantidade * 15
+      escreva("O valor é de ", valorProduto)
+      pare
+
+      caso 3:
+      escreva("x becon valor 18,00 \n")
+      escreva("Digite a quantidade \n")
+      leia(quantidade)
+      valorProduto = quantidade * 18
+      escreva("O valor é de ", valorProduto)
+      pare
+
+      caso 4:
+      escreva("bauru valor 12,00 \n")
+      escreva("Digite a quantidade \n")
+      leia(quantidade)
+      valorProduto = quantidade * 12
+      escreva("O valor desejado e de ", valorProduto)
+      pare
+
+      caso 5:
+      escreva("refrigerante valor 8,00 \n")
+      escreva("Digite a quantidade \n")
+      leia(quantidade)
+      valorProduto = quantidade * 8
+      escreva("O valor desejado e de ", valorProduto)
+      pare
+
+      caso 6:
+      escreva("suco de laranja valor 13,00 \n")
+      escreva("Digite a quantidade \n")
+      leia(quantidade)
+      valorProduto = quantidade * 13
+      escreva("O valor desejado e de ", valorProduto)
+      pare
+
+      caso contrario
+      escreva("Digite um valor válido de 1 a 6.")
+     
+    }
+    
+  }
+}
